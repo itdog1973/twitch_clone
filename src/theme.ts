@@ -37,15 +37,15 @@ const colorTokens = {
   },
 };
 
-export const themeSetting = (mode: PaletteMode) => ({
+export const themeSettings = (mode: PaletteMode) => ({
   palette: {
     mode,
     ...(mode === "dark"
       ? {
           primary: {
-            dark: colorTokens.primary[8],
-            main: colorTokens.primary[9],
-            light: colorTokens.primary[10],
+            dark: colorTokens.primary[9],
+            main: colorTokens.primary[10],
+            light: colorTokens.primary[11],
           },
           secondary: {
             dark: colorTokens.grey[1],
@@ -57,6 +57,9 @@ export const themeSetting = (mode: PaletteMode) => ({
           background: {
             default: colorTokens.grey[2],
             paper: colorTokens.grey[3],
+          },
+          text: {
+            primary: colorTokens.grey[15],
           },
         }
       : {
@@ -75,6 +78,9 @@ export const themeSetting = (mode: PaletteMode) => ({
           background: {
             default: colorTokens.grey[15],
             paper: colorTokens.grey[14],
+          },
+          text: {
+            primary: colorTokens.grey[1],
           },
         }),
   },

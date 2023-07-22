@@ -1,9 +1,14 @@
 import React from "react";
+import Navbar from "../navbar";
+import { Box } from "@mui/material";
 
-type Props = {};
-
-const HomePage = (props: Props) => {
-  return <div>HomePage</div>;
+const HomePage = () => {
+  return (
+    <Box>
+      <Navbar />
+      <Box></Box>
+    </Box>
+  );
 };
 
 export default HomePage;
